@@ -32,8 +32,8 @@ const handleFormSubmit = () => {
 
           <h1 class="hero-title">
             {{ lang === 'it' 
-              ? 'Progettista UI/UX & Studente di Interfacce.' 
-              : 'UI/UX Designer & Interfaces Student.' 
+              ? 'Progettista UI/UX & Studente di Interfacce' 
+              : 'UI/UX Designer & Interfaces Student' 
             }}
           </h1>
           <p class="hero-subtitle">
