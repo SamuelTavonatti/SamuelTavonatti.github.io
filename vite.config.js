@@ -4,4 +4,6 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  publicPath: process.env.NODE_ENV === "production" ? "/SamuelTavonatti.github.io/" : "/",
 })
+
