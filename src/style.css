@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* 1. Blu Navy profondo: Sfondo principale (Solidità e Pragmatismo) */
+  --bg-navy: #0A1128; 
+  
+  /* 2. Grigio Grafite / Ardesia: Superfici e Card (Precisione Tecnica) */
+  --surface-slate: #1E293B;
+  --surface-slate-light: #334155;
+  
+  /* 3. Verde Bosco / Muschio: Dettagli, Icone e Stabilità */
+  --accent-moss: #588157;
+  --accent-moss-light: #A3B18A;
+  
+  /* 4. Giallo Ocra / Ambra: Interazioni, Bottoni e Focus */
+  --accent-amber: #F59E0B;
+  --accent-amber-hover: #D97706;
+
+  /* Testi e Bordi */
+  --text-main: #F8FAFC;
+  --text-muted: #94A3B8;
+  --border: rgba(255, 255, 255, 0.1); 
+  
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-navy);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--accent-amber);
+  color: #000;
+}
+
+section[id] {
+  scroll-margin-top: 120px;
+}
+
+/* Animazioni globali */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Transizione cambio pagina */
+.page-fade-enter-active,
+.page-fade-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.page-fade-enter-from { opacity: 0; transform: translateY(10px); }
+.page-fade-leave-to { opacity: 0; transform: translateY(-10px); }
