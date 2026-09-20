@@ -58,7 +58,7 @@ const copyEmail = () => {
         <div class="hero-media">
           <div class="photo-frame">
             <img 
-              src="/Foto%20personale.jpeg" 
+              src="/Foto-personale.jpeg" 
               alt="Samuel Tavonatti" 
               class="profile-img"
               width="380"

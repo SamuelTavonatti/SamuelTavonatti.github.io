@@ -118,11 +118,11 @@ const closeModal = () => {
               </p>
             </section>
 
-            <!-- 7. NOTE LEGALI & MARCHI TERZI -->
+            <!-- 7. NOTE LEGALI & MARCHI TERZI AGGIORNATA CON IA -->
             <section class="policy-section">
-              <h3>7. Proprietà Intellettuale & Marchi Terzi (Disclaimer)</h3>
+              <h3>7. Proprietà Intellettuale, Intelligenza Artificiale & Marchi Terzi (Disclaimer)</h3>
               <p>
-                Il design, il codice sorgente, l'impostazione grafica e i contenuti originali presenti in questo sito sono tutelati dalle vigenti norme sul diritto d'autore e appartengono a Samuel Tavonatti.
+                Il design, il codice sorgente, l'impostazione grafica e i contenuti originali presenti in questo sito sono tutelati dalle vigenti norme sul diritto d'autore e appartengono a Samuel Tavonatti. A fini di piena trasparenza, si dichiara che alcuni specifici asset visivi di natura concettuale presentati nei case study (inclusi mockup o icone di progetto) sono stati ideati e generati proceduralmente con il supporto di sistemi di Intelligenza Artificiale generativa.
               </p>
               <p>
                 Tutti i marchi, loghi istituzionali, denominazioni sociali e segni distintivi citati o riprodotti in questo portfolio (inclusi <strong>Università degli Studi di Trento</strong>, <strong>Liceo Scientifico Leonardo Da Vinci</strong> e <strong>Trentino Marketing</strong>) appartengono ai rispettivi legittimi proprietari. Il loro utilizzo è effettuato a titolo puramente descrittivo, identificativo, informativo e curriculare, al fine di attestare veridicamente il percorso accademico e professionale svolto, in conformità all'<strong>art. 21 del D.Lgs. 30/2005</strong> (Codice della Proprietà Industriale) e all'<strong>art. 70 della Legge 633/1941</strong> sul diritto d'autore. Tale menzione non sottintende alcun vincolo di sponsorizzazione o affiliazione commerciale esclusiva con i titolari dei rispettivi marchi.
@@ -205,11 +205,11 @@ const closeModal = () => {
               </p>
             </section>
 
-            <!-- 7. LEGAL NOTICE & THIRD-PARTY TRADEMARKS -->
+            <!-- 7. LEGAL NOTICE & THIRD-PARTY TRADEMARKS AGGIORNATA CON IA -->
             <section class="policy-section">
-              <h3>7. Intellectual Property & Third-Party Trademarks (Disclaimer)</h3>
+              <h3>7. Intellectual Property, Artificial Intelligence & Third-Party Trademarks</h3>
               <p>
-                The visual layout, design system, source code, and original materials published on this website are protected under copyright law and belong to Samuel Tavonatti.
+                The visual layout, design system, source code, and original materials published on this website are protected under copyright law and belong to Samuel Tavonatti. For full transparency, it is hereby declared that certain conceptual visual assets presented in the case studies (such as project mockups or icons) were conceptualized and procedurally generated with the assistance of generative Artificial Intelligence systems.
               </p>
               <p>
                 All institutional trademarks, organizational logos, and brand emblems shown or referenced across this portfolio (including <strong>University of Trento</strong>, <strong>Liceo Scientifico Leonardo Da Vinci</strong>, and <strong>Trentino Marketing</strong>) belong entirely to their respective lawful owners. They are displayed strictly for descriptive, identification, and curriculum vitae verification purposes, as allowed under applicable intellectual property laws (including Art. 21 Italian Legislative Decree 30/2005 and fair use / nominative use standards). Their inclusion does not imply any official commercial partnership, endorsement, or sponsorship.
