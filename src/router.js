@@ -4,36 +4,49 @@ import ExperienceView from './views/ExperienceView.vue'
 import ProjectsView from './views/ProjectsView.vue'
 
 const routes = [
-  { 
-    path: '/', 
-    name: 'Home', 
-    component: HomeView 
+  {
+    path: '/',
+    name: 'home',
+    component: HomeView
   },
-  { 
-    path: '/esperienze', 
-    name: 'Experience', 
-    component: ExperienceView 
+  {
+    path: '/esperienze',
+    name: 'experience',
+    component: ExperienceView
   },
-  { 
-    path: '/progetti', 
-    name: 'Projects', 
-    component: ProjectsView 
+  {
+    path: '/progetti',
+    name: 'projects',
+    component: ProjectsView
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/'
   }
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
   scrollBehavior(to, from, savedPosition) {
-    if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: 'smooth'
-      }
-    }
     if (savedPosition) {
-      return { ...savedPosition, behavior: 'smooth' }
+      return savedPosition
     }
+    
+    if (to.hash) {
+      // Se stiamo cambiando pagina (es. da /progetti a /#contatti)
+      // ritardiamo lo scroll per permettere alla transizione di montare il componente
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve({
+            el: to.hash,
+            behavior: 'smooth',
+            top: 80
+          })
+        }, 300) // 300ms coincide esattamente con la durata della transizione page-fade
+      })
+    }
+    
     return { top: 0, behavior: 'smooth' }
   }
 })

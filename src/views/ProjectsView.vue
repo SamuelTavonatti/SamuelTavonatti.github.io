@@ -6,11 +6,11 @@ defineProps({
 
 <template>
   <div class="page-wrapper">
-    <!-- HERO HEADER PROGETTI -->
+    <!-- HERO HEADER SENZA PUNTO FINALE NEL TITOLO -->
     <header class="page-header animate-fade-up">
       <div class="header-content">
         <h1 class="page-title">
-          {{ lang === 'it' ? 'Progetti Selezionati.' : 'Selected Works.' }}
+          {{ lang === 'it' ? 'Progetti Selezionati' : 'Selected Works' }}
         </h1>
         <p class="page-subtitle">
           {{ lang === 'it'
@@ -23,7 +23,7 @@ defineProps({
 
     <div class="content-sections animate-fade-up" style="animation-delay: 0.15s;">
       
-      <!-- 01. SVILUPPO AUTONOMO -->
+      <!-- 01. SVILUPPO PERSONALE -->
       <section class="grid-section">
         <div class="section-left">
           <span class="section-num">01 /</span>
@@ -85,7 +85,7 @@ defineProps({
         </div>
       </section>
 
-      <!-- 02. ELABORATI ACCADEMICI -->
+      <!-- 02. AMBITO UNIVERSITARIO -->
       <section class="grid-section">
         <div class="section-left">
           <span class="section-num">02 /</span>

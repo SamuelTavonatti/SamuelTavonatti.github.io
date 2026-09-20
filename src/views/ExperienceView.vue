@@ -1,12 +1,15 @@
 <script setup>
 defineProps({
-  lang: String
+  lang: {
+    type: String,
+    default: 'it'
+  }
 })
 </script>
 
 <template>
   <div class="page-wrapper">
-    <!-- HERO HEADER ESPERIENZE -->
+    <!-- HERO HEADER -->
     <header class="page-header animate-fade-up">
       <div class="header-content">
         <h1 class="page-title">
@@ -14,8 +17,8 @@ defineProps({
         </h1>
         <p class="page-subtitle">
           {{ lang === 'it'
-            ? 'Gestione del ritmo operativo, precisione e dinamiche di squadra acquisite a contatto diretto con il pubblico e la ristorazione.'
-            : 'Operational pacing, accuracy, and team collaboration developed through direct customer-facing service.'
+            ? 'Gestione del ritmo operativo, precisione tecnica su piattaforme digitali e dinamiche di squadra acquisite sul territorio e a contatto con il pubblico.'
+            : 'Operational pacing, digital platform precision, and teamwork developed across regional field events and direct customer service.'
           }}
         </p>
       </div>
@@ -31,7 +34,42 @@ defineProps({
         <div class="section-right">
           <div class="job-list">
             
-            <!-- Cameriere Al Gusto la cucina di Corrado -->
+            <!-- 1. TRENTINO MARKETING (TIROCINIO ACCADEMICO & OPERATIVO) -->
+            <article class="job-card">
+              <div class="job-header">
+                <div>
+                  <div class="role-badge-row">
+                    <span class="material-symbols-outlined icon-moss">desktop_windows</span>
+                    <h3>{{ lang === 'it' ? 'Tirocinio UI/UX & Digital Content Specialist' : 'UI/UX & Digital Content Intern' }}</h3>
+                  </div>
+                  <span class="company-name">Trentino Marketing</span>
+                </div>
+                <span class="job-date">{{ lang === 'it' ? 'Ago 2026 — Ott 2026' : 'Aug 2026 — Oct 2026' }}</span>
+              </div>
+              <p class="job-location">{{ lang === 'it' ? 'Trento, Italia' : 'Trento, Italy' }}</p>
+              <ul class="job-tasks">
+                <li>
+                  {{ lang === 'it'
+                    ? 'Gestione e popolamento del CMS enterprise (Pimcore), stesura e pubblicazione di articoli editoriali con interlinking strategico per creare flussi di navigazione coerenti, uniti al monitoraggio tecnico e risoluzione di errori 404 e link interrotti.'
+                    : 'Enterprise CMS administration (Pimcore), drafting and publishing editorial articles with strategic content linking to build intuitive user flows, alongside technical 404 error auditing and broken link resolution.'
+                  }}
+                </li>
+                <li>
+                  {{ lang === 'it'
+                    ? 'Manutenzione e aggiornamento continuo dei contenuti per grandi eventi come I Suoni delle Dolomiti e TrentoDoc Festival, curando la correttezza delle posizioni geografiche, sedi d\'evento e dettagli logistici per il pubblico.'
+                    : 'Continuous content maintenance and updates for landmark events such as I Suoni delle Dolomiti and TrentoDoc Festival, ensuring accurate geolocation, venue coordinates, and visitor logistics.'
+                  }}
+                </li>
+                <li>
+                  {{ lang === 'it'
+                    ? 'Partecipazione attiva al coordinamento logistico e organizzativo sul campo durante TrentoDoc Festival, I Suoni delle Dolomiti e Il Festival dello Sport di Trento, garantendo tempestività nel problem solving operativo.'
+                    : 'Active involvement in on-site operations and logistical coordination during TrentoDoc Festival, I Suoni delle Dolomiti, and Il Festival dello Sport di Trento.'
+                  }}
+                </li>
+              </ul>
+            </article>
+
+            <!-- 2. CAMERIERE AL GUSTO LA CUCINA DI CORRADO -->
             <article class="job-card">
               <div class="job-header">
                 <div>
@@ -43,15 +81,30 @@ defineProps({
                 </div>
                 <span class="job-date">{{ lang === 'it' ? 'Ago 2023 — Presente' : 'Aug 2023 — Present' }}</span>
               </div>
-              <p class="job-location">Trento, Italia</p>
+              <p class="job-location">{{ lang === 'it' ? 'Trento, Italia' : 'Trento, Italy' }}</p>
               <ul class="job-tasks">
-                <li>{{ lang === 'it' ? 'Gestione autonoma delle comande, servizio ai tavoli e cura continua dell’esperienza del cliente.' : 'Autonomous table service management, order handling, and client care.' }}</li>
-                <li>{{ lang === 'it' ? 'Coordinamento rapido tra sala e cucina durante i momenti di massima affluenza e pressione.' : 'Fast coordination between kitchen and floor staff under peak service pressure.' }}</li>
-                <li>{{ lang === 'it' ? 'Applicazione di problem solving immediato, autocontrollo e comunicazione diretta nel team.' : 'Direct problem solving, composed attitude, and clear communication within the team.' }}</li>
+                <li>
+                  {{ lang === 'it' 
+                    ? 'Gestione autonoma delle comande, servizio ai tavoli e cura continua dell’esperienza del cliente.' 
+                    : 'Autonomous table service management, order handling, and continuous client care.' 
+                  }}
+                </li>
+                <li>
+                  {{ lang === 'it' 
+                    ? 'Coordinamento rapido tra sala e cucina durante i momenti di massima affluenza e pressione.' 
+                    : 'Fast coordination between kitchen and floor staff under peak service pressure.' 
+                  }}
+                </li>
+                <li>
+                  {{ lang === 'it' 
+                    ? 'Applicazione di problem solving immediato, autocontrollo e comunicazione diretta nel team.' 
+                    : 'Direct problem solving, composed attitude, and clear communication within the operational team.' 
+                  }}
+                </li>
               </ul>
             </article>
 
-            <!-- Barman / Tuttofare Stagionale -->
+            <!-- 3. BARMAN / TUTTOFARE STAGIONALE -->
             <article class="job-card">
               <div class="job-header">
                 <div>
@@ -59,18 +112,28 @@ defineProps({
                     <span class="material-symbols-outlined icon-moss">local_bar</span>
                     <h3>{{ lang === 'it' ? 'Tuttofare / Barman (Stagionale)' : 'All-Rounder / Barman (Seasonal)' }}</h3>
                   </div>
-                  <span class="company-name">{{ lang === 'it' ? 'Rifugio / Struttura ricettiva' : 'Hospitality Lodge' }}</span>
+                  <span class="company-name">{{ lang === 'it' ? 'Rifugio / Struttura ricettiva' : 'Hospitality Mountain Lodge' }}</span>
                 </div>
                 <span class="job-date">{{ lang === 'it' ? 'Mag 2023 — Giu 2023' : 'May 2023 — Jun 2023' }}</span>
               </div>
               <p class="job-location">Passo Cereda, Trentino</p>
               <ul class="job-tasks">
-                <li>{{ lang === 'it' ? 'Preparazione caffetteria e bevande, supporto logistico e riordino degli spazi.' : 'Beverage preparation, logistical restocking, and venue maintenance.' }}</li>
-                <li>{{ lang === 'it' ? 'Accoglienza tempestiva degli avventori e gestione delle necessità operative quotidiane.' : 'Guest reception and daily operational problem resolution.' }}</li>
+                <li>
+                  {{ lang === 'it' 
+                    ? 'Preparazione caffetteria e bevande, supporto logistico e riordino degli spazi.' 
+                    : 'Beverage preparation, logistical restocking, and venue maintenance.' 
+                  }}
+                </li>
+                <li>
+                  {{ lang === 'it' 
+                    ? 'Accoglienza tempestiva degli avventori e gestione delle necessità operative quotidiane.' 
+                    : 'Guest reception and daily operational problem resolution in a dynamic hospitality setting.' 
+                  }}
+                </li>
               </ul>
             </article>
 
-            <!-- Animatore Giovanile -->
+            <!-- 4. ANIMATORE GIOVANILE -->
             <article class="job-card">
               <div class="job-header">
                 <div>
@@ -82,10 +145,20 @@ defineProps({
                 </div>
                 <span class="job-date">{{ lang === 'it' ? 'Estate 2022' : 'Summer 2022' }}</span>
               </div>
-              <p class="job-location">Trento, Italia</p>
+              <p class="job-location">{{ lang === 'it' ? 'Trento, Italia' : 'Trento, Italy' }}</p>
               <ul class="job-tasks">
-                <li>{{ lang === 'it' ? 'Organizzazione e guida di laboratori ricreativi e giochi educativi per gruppi di ragazzi.' : 'Organization and leadership of recreational workshops and group activities.' }}</li>
-                <li>{{ lang === 'it' ? 'Responsabilità sulla sicurezza e mediazione nelle dinamiche relazionali del gruppo.' : 'Safety supervision and peer mediation within group dynamics.' }}</li>
+                <li>
+                  {{ lang === 'it' 
+                    ? 'Organizzazione e guida di laboratori ricreativi e giochi educativi per gruppi di ragazzi.' 
+                    : 'Organization and leadership of recreational workshops and group educational activities.' 
+                  }}
+                </li>
+                <li>
+                  {{ lang === 'it' 
+                    ? 'Responsabilità sulla sicurezza e mediazione nelle dinamiche relazionali del gruppo.' 
+                    : 'Safety supervision and peer mediation within group dynamics.' 
+                  }}
+                </li>
               </ul>
             </article>
 
@@ -157,7 +230,7 @@ defineProps({
 
 .section-num {
   font-size: 0.95rem;
-  color: var(--accent-moss);
+  color: var(--accent-amber);
   font-family: monospace;
   font-weight: 700;
 }
@@ -185,7 +258,7 @@ defineProps({
 }
 
 .job-card:hover {
-  border-color: rgba(245, 158, 11, 0.4);
+  border-color: var(--accent-amber);
   transform: translateY(-2px);
 }
 
@@ -218,7 +291,7 @@ defineProps({
 }
 
 .icon-moss {
-  color: var(--accent-moss-light);
+  color: var(--accent-amber);
   font-size: 22px;
 }
 
